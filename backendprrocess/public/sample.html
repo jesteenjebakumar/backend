@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home </title>
+    <link rel="stylesheet" href="./assects/css/normalize.css">
+    <link rel="stylesheet" href="./assects/css/bootstrap.min.css">
+  
+    <!-- CSS only -->
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<style>
+body{
+    /*
+    
+    background-image: linear-gradient(90deg, rgba(102, 120, 202, 0.685), rgb(255, 126, 238));
+    */
+    background-color: rgb(22, 22, 22);
+    padding: 0%;
+    margin: 0%;
+    width: auto;
+    height: auto;
+}
+.load{
+    position:relative;
+    left: -5px;
+}
+button{
+    align-items: center;
+    position: relative;
+    left: 123px;
+    border: hidden;
+    color: rgb(255, 251, 0);
+background-color: rgb(0, 248, 132);
+transition: 0.8s;
+border-radius: 6px;
+outline-style: hidden;
+
+
+}
+button:hover{
+color: rgb(212, 0, 255);
+transition: 0.8s;
+background-color: rgb(4, 247, 97);
+border-radius: 23px;
+outline-style: hidden;
+}
+button:active{
+    outline-style: hidden;
+}
+.two{
+    position: absolute;
+    left: 123px;
+}
+#small{
+   
+    overflow: hidden;
+   
+}
+#img{
+    width: 62px;
+    height: 62px;
+    border-radius: 30px;
+}
+.cover{
+/*border: red 2px solid;*/
+display: flex;
+shape-rendering: auto;
+gap: 32px;
+min-height: 1430px;
+display: flex;
+flex-wrap: wrap;
+margin-top: 20px;
+margin-left: 15px;
+}
+.cards{
+   
+    color: white;
+  background-color: rgba(209, 187, 187, 0.425);
+  width: fit-content;
+  height:400px;
+   overflow: hidden;
+  border-radius: 12px;
+  transition: 0.5s;
+ /* -webkit-box-reflect: below 1px linear-gradient(transparent,rgba(255, 0, 0, 0.3));*/
+  z-index: 10;
+  -webkit-box-pack: justify;
+}
+input:active{
+    background-color: bisque;
+}
+.cards:hover{
+   box-shadow: 8px 8px 22px rgb(11, 99, 214),-8px -7px 22px rgb(11, 99, 214)
+   ,inset 5px 5px 12px orange; 
+    transition: 0.5s;
+  
+   transition-property: all;
+}
+
+.adjust{
+    width: 366px;
+}
+.imgin{
+  
+   position: relative;
+   height: 156px;
+  width: 390px;
+   
+}
+.protect{
+    width: 500px;
+    height: 300px;
+    border: 2px solid tomato;
+    overflow-y: scroll;
+    background-color: tomato;
+}
+
+textarea{
+    background-color: tomato;
+    border-bottom: 12px;
+}
+input{
+    outline-style: hidden;
+    border: darkviolet;
+}
+@media (max-width:499px) {
+    .protect{
+        width: 300px;
+        height: 300px;
+        border: 2px solid springgreen;
+        overflow: scroll;
+    }
+}
+.conent{
+   background-color: rgb(32, 127, 236);
+  position: relative;
+  bottom: 5px;
+   width: 390px;
+   height: 269px;
+}
+.link{
+    font-size: large;
+    color: rgb(17, 0, 255);
+   text-decoration: none;
+   
+   transition: 0.5s;
+   
+}
+
+
+.link:hover{
+    color: rgb(255, 0, 98);
+    transition: 0.5s;
+    text-decoration: none;
+}
+.link::before{
+    content: "";
+    position: absolute;
+    left: 0;
+   width: 0;
+    height: 1.2em;
+    background-color:var(--change ,rgb(109, 101, 101));
+    transition: 1.8s;
+    top: 3;
+    bottom: 158px;
+    height: 2px;
+  
+    filter: blur(1px);
+}
+.link:hover::before{
+    content: "";
+    position: absolute;
+    left: 0;
+   width: 10%;
+    height: 1.2em;
+    background-color:var(--change ,rgb(44, 19, 19));
+    transition: 1.8s;
+    top: 13;
+    bottom: 158px;
+    height: 2px;
+   
+    filter: blur(2px);
+}
+
+</style>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+
+        <img src="photo.svg" width="30" height="30" class="d-inline-block align-top navbar-brand" alt="" loading="lazy">
+        <p  class="navbar-brand  text-center fix">bootstrap</p>
+        <button class="navbar-toggler load" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon "></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto pas"><!--mr right ml left -->
+            <li class="nav-item active">
+              <a class="nav-link" href="nav.html">Home <span class="sr sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a href="obout.html" class="nav-link" >obout</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">register</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                help
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">facebook</a>
+                <a class="dropdown-item" href="#">instagram</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">github</a>
+              </div>
+            </li>
+           
+  </div>
+      
+ 
+  </nav>
+  <div class="alert alert-warning alert-dismissible fade show" role="alert">
+    <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+    <button type="button" class="btn btn-close" data-bs-dismiss="alert" aria-label="Close">&times;</button>
+  </div> 
+  <div class="card">
+    <img src="./inputbox.png" class="card-img-top" alt="...">
+  
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+  
+  <div class="card" aria-hidden="true">
+    <img src="./sumbitbutton.png" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title placeholder-glow">
+        <span class="placeholder col-6"></span>
+      </h5>
+      <p class="card-text placeholder-glow">
+        <span class="placeholder col-7"></span>
+        <span class="placeholder col-4"></span>
+        <span class="placeholder col-4"></span>
+        <span class="placeholder col-6"></span>
+        <span class="placeholder col-8"></span>
+      </p>
+      <a href="#" tabindex="-1" class="btn btn-primary disabled placeholder col-6"></a>
+    </div>
+  </div>
+  </div>
+  <script src="./assects/js/jquery.min.js"></script>
+  <script src="./assects/js/bootstrap.min.js"></script>
+  <style>
+      .move{
+          margin-right: 42px;
+          position:absolute;
+          right: 145px;
+      }
+  </style>
+</div>
